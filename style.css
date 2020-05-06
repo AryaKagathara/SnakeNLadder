@@ -1,0 +1,188 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color:lightcoral;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+html {
+    overflow: hidden;
+    transform: scale(.7);
+}
+
+img {
+    cursor: pointer;
+}
+
+.block {
+    width: 100%;
+}
+
+.blocks {    
+    width: 49.5%;
+    height: 100vh;
+    display: inline-block;
+}
+table, .options{
+    margin: 0 20px;
+    text-align: center;
+    display: inline-block;
+}
+
+table th{
+    width: 50px;
+    padding: 20px 0;
+    font-size: 32px;
+    background-color: #0195D1;
+}
+
+table td {
+    padding: 10px 50px;
+    font-size: 28px;
+}
+
+table tr td{
+    background-color: rgba(172, 255, 47, 0.726);
+}
+
+table tr:nth-child(odd) td{
+    background-color: rgba(255, 255, 0, 0.856);
+}
+
+.options {
+    margin-top: -50%;
+    transform: translate(50px, -50%);
+}
+
+.options h4 {
+    margin-top: 10px;
+}
+
+.options h3 {
+    margin: 20px auto 0;
+}
+
+.options img {
+    width: 150px;
+    display: block;
+    margin: 5px auto;
+}
+
+.options img:nth-child(2) {
+    width: 60px;
+}
+
+img.rules1:hover {
+    animation: shake .4s;
+}
+
+img.rules2 {
+    transition: .4s;
+}
+
+img.rules2:hover {
+    transform: rotateY(180deg);
+}
+
+
+#reset {
+    transition: 1s;
+}
+
+#reset:hover {
+    transform: rotate(360deg);
+}
+
+#rolldice {
+    transition: .3s;
+}
+
+#rolldice:hover {
+    transform: scale(1.1);
+}
+
+#current:hover {
+    animation: vshake .3s;
+}
+
+#profile2 {
+    transition: .3s;
+}
+
+#profile2:hover {
+    transform: scale(1.3);
+}
+
+.dock {
+    transform: translate(0, -65%);
+    width: 350px;
+    height: 235px;
+    display: inline-block;
+    text-align: center;
+    border: 1px solid black;
+    margin: 20px;
+    padding: 20px;
+}
+
+.dock1 img.profile, .dock1 h2, .dock1 h3, .dock2 img.profile, .dock2 h2, .dock2 h3 {
+    display: inline-block;
+}
+
+.dock1 h2, .dock2 h2 {
+    font-size: 48px;
+}
+
+.dock1 h3, .dock2 h3 {
+    font-size: 30px;
+}
+
+.docks .playerscore {
+    font-size: 92px;
+}
+
+
+.block2{
+    transform: translate(50px,-150px);
+    
+}
+
+.block2 img.board{
+    width: 90%;
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(10deg);
+    }
+    25% {
+        transform: rotate(-15deg);
+    }
+    50% {
+        transform: rotate(+15deg);
+    }
+    75% {
+        transform: rotate(-15deg);
+    }
+    100% {
+        transform: rotate(+10deg);
+    }
+}
+
+@keyframes vshake {
+    0% {
+        transform: translate(0,-5px);
+    }
+    30% {
+        transform: translate(0,+10px);
+    }
+    50% {
+        transform: translate(0,-10px);
+    }
+    70% {
+        transform: translate(0,-10px);
+    }
+    100% {
+        transform: translate(0,+5px);
+    }
+}
